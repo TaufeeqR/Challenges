@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Forms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <center><h1>Registration Form</h1></center>
+    <!-- Table helps align the form data -->
+    <!-- Table is within the form -->
+    <form class="" action="index.html" method="post">
+        <table align="center">
+                <tr>
+                    <td>User ID:</td>
+                    <td><input type="text" name="" minlength="5" maxlength="12" size="35" required placeholder="Required and must be the length of 5 to 12."></td>
+                </tr>
+                <!-- "required" means the field has to be completed before moving on -->
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="" minlength="7" maxlength="12" size="35" required placeholder="Required and must be length of 7 to 12."></td>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="" required pattern="[a-zA-Z]{3,20}" size="35" placeholder="Required and alphabates only."></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><input type="text" name="address"  size="35" placeholder="Optional"></td>
+                </tr>
+                <!-- Optional select tags below -->
+                <tr>
+                    <td>Country:</td>
+                    <td>
+                            <select name="Country" required>
+                            <option value="(Please select a country)">(Please select a country)</option>
+                            <option value="South Africa">South Africa</option>
+                            <option value="Columbia">Columbia</option>
+                            <option value="Madagascar">Madagascar</option>
+                            <option value="Zimbabwe">Zimbabwe</option>
+                    </td>    
+                </tr>
+                <tr>
+                    <td>Zip code:</td>
+                    <td><input type="number" name="Zip code" size="35" required placeholder="Required. Must be numbers only."></td>
+                </tr>
+                <tr>
+                    <td>Email: </td>
+                    <td><input type="email" name="email"  size="35" required placeholder="Required. Must be a valid email."></td>
+                </tr>
+                <tr>
+                    <td>Sex:</td>
+                    <td>
+                        <input type="radio" name="" value="M" required>Male
+                        <input type="radio" name="" value="F" required>Female
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Language:</td>
+                    <td>
+                        <input type="checkbox" name="Language" value="L" required>English
+                        <input type="checkbox" name="" value="L">Non-English
+                    </td>
+                </tr>
+                <tr>
+                    <td>About:</td>
+                    <td><textarea name="message" rows="10" cols="50" placeholder="Optional"></textarea></td>
+                </tr>
+                <tr>
+                    <td><td><input type="submit"></td></td>
+                </tr>
+            </table>
+    </form>
+       
+S
+</body>
+</html>

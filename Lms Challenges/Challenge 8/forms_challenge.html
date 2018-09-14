@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Coffee Reseller Survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <center><h1><ins>Challenge 8</ins></h1></center>
+
+    <center><h2><ins>Coffee Reseller Survey</ins></h2></center>
+
+    <h2><ins>Personal Details</ins></h2>
+    <!-- Form starts here -->
+    <form>
+        Firstname:
+        <br><input text="text" name="Firstname" placeholder="Firstname">
+        <br>Surname:
+        <br><input text="text" name="Surname" placeholder="Surname">
+        <br>Contact Details
+        <br><input text="Contact Details" name="Contact Details" placeholder="Contact Details">
+        <br>Gender:
+        <br><input type="radio" name="Gender" value="Male">Male
+        <br><input type="radio" name="gender" value="Female">Female
+        <br>Date of birth:
+        <br><input type="date" name="bday">
+        <br>User Password:
+        <br><input type="password" name="psw">
+    </form>
+<br>
+<br>
+    <h2><ins>Questionnaire</ins></h2>
+    <p>1.How often do you visit coffee shops?</p>
+    <!-- Checkbox form -->
+    <form>
+        <input type="checkbox" name="rarely" value="rarely">Rarely
+        <input type="checkbox" name="often" value="often">Often
+        <input type="checkbox" name="always" value="always">Always
+    </form>
+    <p>2.What is your favorite coffee shop? Where is it located?</p>
+    <!-- Message box for a comment response -->
+    <form>
+        <textarea name="message" rows="5" cols="50"></textarea>
+    </form>
+    <p>3.What do you typically order to drink?</p>
+    <form>
+        <textarea name="message" rows="5" cols="50"></textarea>
+    </form>
+    <p>4.Do you prefer large, national chain coffee shops or small, privately owned coffee shops?</p>
+    <form>
+        <input type="checkbox" name="coffee" value="large">Large
+        <br><input type="checkbox" name="Coffee" value="national">National Chaine Coffee shops
+        <br><input type="checkbox" name="Cofee" value="small">Small Privately Owned Coffee Shops<br>
+        
+    </form>
+    <h2>Comments</h2>
+    <!-- Message box with a submit and reset button -->
+    <form>
+        <textarea name="message" rows="15" cols="100"></textarea>
+        <br><input type="submit" value="Send Survey">  
+        <input type="reset" value="Reset">
+    </form>
+   
+</body>
+</html>
